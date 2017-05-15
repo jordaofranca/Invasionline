@@ -1,0 +1,221 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #2A2C36;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.container h1, .container h2, .container h3, .container h4{
+  color: #9a9a9a;
+}
+
+.container *{
+  box-sizing: border-box;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.row{
+  margin: 0;
+  padding: 0;
+}
+
+.modal > div > div{
+  background-color: #2A2C36;
+}
+.modal > div > div > div{
+  background: none !important;
+}
+
+/*input*/
+.fw-input{
+  width: 100% !important;
+}
+
+.avatar{
+  width: 100px;
+  height: 100px;
+  display: inline-flex;
+}
+
+.title{
+  color: #c6ee6d;
+}
+.list{
+  color: #2A2C36 !important;
+  font-size: 18px !important;
+}
+.list.active svg{
+  fill: #e0e0e0 !important;
+}
+.list.active{
+  color: #e0e0e0 !important;
+}
+.list svg{
+  fill: #2A2C36 !important;
+  width: 28px;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+
+.user-head{
+  width: calc(100% - 30px);
+  background-color: #2A2C36;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.user-head-avatar{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.user-head-avatar img{
+  width: 100%;
+}
+.user-head-name{
+  margin-left: 15px;
+  color: #ffffff;
+}
+.header{
+  background-color: #2A2C36 !important;
+  z-index: 1100 !important;
+  border-radius: 0 !important;
+  padding: 20px;
+}
+.header-avatar{
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  display: inline-flex;
+}
+.header-name{
+  margin-top: 10px;
+}
+
+.dashboard-text{
+  font-size: 11rem;
+  letter-spacing: -18px;
+  line-height: 0;
+  margin: 4.5rem 0;
+  color: #e4004d;
+  font-weight: 700;
+}
+.dashboard-label{
+  position: absolute;
+  right: 21px;
+  top: 30%;
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+/*clues*/
+.clueCard{
+  padding: 20px;
+  margin-top: 10px;
+  background-position: center, center left -20% !important;
+  background-size: 100% 100%, 100% !important;
+  background-repeat: no-repeat !important;
+  background-color: #2A2C36 !important;
+  min-height: 100px;
+  position: relative;
+}
+/*Rank*/
+.rank-item:nth-child(-n+5) .nomeRank,
+.rank-item:nth-child(-n+5) .totalPontos,
+.rank-item:nth-child(-n+5) .positionRank{
+  color:rgb(198, 238, 109) !important;
+}
+.nomeRank, .positionRank{
+  width: 33.333%;
+  height: 100%;
+
+  font-size: 18px;
+  color: #FFFFFF;
+
+  display: table;
+}
+
+.nomeRank div, .positionRank div{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*About*/
+
+.tituloAbout {
+  font-size: 20px;
+  color: #B2EC71;
+  line-height: 28px;
+}
+
+.textAbout {
+  font-size: 16px;
+  color: rgba(255,255,255,0.70);
+  line-height: 24px;
+
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.pista-overlay{
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.3));
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/*Clue*/
+.clue-image{
+  height: 240px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.clue-title{
+  font-size: 20px;
+  color: #c6ee6d;
+  margin-top: 210px;
+}
+.clue-description{
+  font-size: 16px;
+  color: #fffcc7;
+  margin-top: 20px;
+}
+
+.avatar-icon input{
+  display: none;
+}
+
+.avatar-icon input:checked + label img{
+  -webkit-filter: drop-shadow(2px 2px 5px #000);
+  filter:         drop-shadow(2px 2px 5px #000);
+}
+.avatar-icon img{
+  -webkit-filter: opacity(0.2);
+  filter:         opacity(0.2);
+}
